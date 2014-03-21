@@ -1,7 +1,4 @@
 var A = A || {};
-/*--------------------------------------------------------------------------
- Specified Methods
-/*------------------------------------------------------------------------*/
 A.freshsquare = {
   silentController: function() { // used to control silent slider
     jQuery('ul.silent.slides').each(function(){
@@ -25,7 +22,7 @@ A.freshsquare = {
       $li.hover(function(){ slide(updId(jQuery(this).index())); }, function(){});
     });
   },
-  processController: function() { // used to controll process titles
+  processController: function() { // control process titles
     jQuery('.items.process').each(function(){
       var
         $i = jQuery(this), $li = $i.children(),
@@ -38,7 +35,7 @@ A.freshsquare = {
       }, function(){});
     });
   },
-  tuneMenu: function() { // used to stick menu on scroll
+  tuneMenu: function() { // stick menu control
     var $h = jQuery('.head.top');
     var scrollTimeout, fixed = false, setA = this.activeMenu;
     windowH = jQuery(window).height();
